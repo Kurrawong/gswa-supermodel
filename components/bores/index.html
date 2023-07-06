@@ -1,0 +1,1643 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../sites-admin/">
+      
+      
+        <link rel="next" href="../mines/">
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>Bores - GSWA Supermodel</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="youtube" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bores-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GSWA Supermodel" class="md-header__button md-logo" aria-label="GSWA Supermodel" data-md-component="logo">
+      
+  <img src="../../assets/classes-icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GSWA Supermodel
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bores
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GSWA Supermodel" class="md-nav__button md-logo" aria-label="GSWA Supermodel" data-md-component="logo">
+      
+  <img src="../../assets/classes-icon.svg" alt="logo">
+
+    </a>
+    GSWA Supermodel
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../supermodel/" class="md-nav__link">
+        The Supermodel
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/" class="md-nav__link">
+        Background Models
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backbone/" class="md-nav__link">
+        Backbone Model
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Component Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Component Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features-hierarchy/" class="md-nav__link">
+        Features Hierarchy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geo-features/" class="md-nav__link">
+        Geological Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sites-admin/" class="md-nav__link">
+        Sites & Admin Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bores
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Bores
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#profile-definition" class="md-nav__link">
+    Profile Definition
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-profile-of" class="md-nav__link">
+    Is Profile Of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification" class="md-nav__link">
+    Specification
+  </a>
+  
+    <nav class="md-nav" aria-label="Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bore" class="md-nav__link">
+    Bore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bore_1" class="md-nav__link">
+    Bore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borehole-interval" class="md-nav__link">
+    Borehole Interval
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#has-origin-position" class="md-nav__link">
+    has origin position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-log-element" class="md-nav__link">
+    has log element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-purpose" class="md-nav__link">
+    has purpose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-inclination" class="md-nav__link">
+    has inclination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-surface-circumstances" class="md-nav__link">
+    has surface circumstances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-status" class="md-nav__link">
+    has status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#had-drilling-method" class="md-nav__link">
+    had drilling method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-vertical-reference" class="md-nav__link">
+    has vertical reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validators" class="md-nav__link">
+    Validators
+  </a>
+  
+    <nav class="md-nav" aria-label="Validators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vocabularies" class="md-nav__link">
+    Vocabularies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eg-01" class="md-nav__link">
+    E.g. 01 
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-repository" class="md-nav__link">
+    Code Repository
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mines/" class="md-nav__link">
+        Mines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-occurrence/" class="md-nav__link">
+        Resource Occurence
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples/" class="md-nav__link">
+        Samples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authorities/" class="md-nav__link">
+        Authorities
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabularies/" class="md-nav__link">
+        Vocabularies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validators/" class="md-nav__link">
+        Validators
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#profile-definition" class="md-nav__link">
+    Profile Definition
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-profile-of" class="md-nav__link">
+    Is Profile Of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification" class="md-nav__link">
+    Specification
+  </a>
+  
+    <nav class="md-nav" aria-label="Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bore" class="md-nav__link">
+    Bore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bore_1" class="md-nav__link">
+    Bore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borehole-interval" class="md-nav__link">
+    Borehole Interval
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#has-origin-position" class="md-nav__link">
+    has origin position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-log-element" class="md-nav__link">
+    has log element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-purpose" class="md-nav__link">
+    has purpose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-inclination" class="md-nav__link">
+    has inclination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-surface-circumstances" class="md-nav__link">
+    has surface circumstances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-status" class="md-nav__link">
+    has status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#had-drilling-method" class="md-nav__link">
+    had drilling method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-vertical-reference" class="md-nav__link">
+    has vertical reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validators" class="md-nav__link">
+    Validators
+  </a>
+  
+    <nav class="md-nav" aria-label="Validators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vocabularies" class="md-nav__link">
+    Vocabularies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eg-01" class="md-nav__link">
+    E.g. 01 
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-repository" class="md-nav__link">
+    Code Repository
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="bores-model">Bores Model</h1>
+<p><a href="../../assets/bores-model/Concepts.svg"></p>
+<figure id="figure-bc">
+<p><img alt="" src="../../assets/bores-model/Concepts.svg" />
+  </p>
+<figcaption>Figure BI: Bores Model intro figure</figcaption>
+</figure>
+<p></a></p>
+<p>This model describes physical, functional and operational aspects of Bores, sometimes known as Wells.</p>
+<p>This Model is a formally-defined <a href="https://www.w3.org/TR/dx-prof/#dfn-profile"><em>profile</em></a> which is multi-part standard that includes a specification, schema, data validators, supporting vocabularies and a few other things. Also, this model <em>profiles</em> other standards, that is it inherits and depends on elements of other standards. Data created conforming to this <em>profile</em> will conform to the standards this model profiles.</p>
+<p>The comprehensive listing of the various parts of this profile are given in the <a href="#profile-definition">Profile Definition</a> section, below.</p>
+<p>The Semantic Web model component of this profile, it's schema, is published online at a persistent web location:</p>
+<ul>
+<li><strong><a href="https://linked.data.gov.au/def/bore">https://linked.data.gov.au/def/bore</a></strong></li>
+</ul>
+<h2 id="profile-definition">Profile Definition</h2>
+<h3 id="is-profile-of">Is Profile Of</h3>
+<p>This profile is a specialisation of - a constraining of - several existing Standards, some of which are about bores/boreholes and some of which are about more fundamental concepts relevant to bores, such as spatiality and sampling. Specifically, this profile is an interpretation of <a href="../../background/#geosciml">GeoSciML</a>'s non-Semantic Web Boreholes model in Semantic Web form, with alignments to <a href="../../background/#geosparql">GeoSPARQL</a> a general-purpose spatial Semantic Web standard and <a href="../../background/#sosa">SOSA</a>, a general Semantic Web standard for sampling features &amp; systems. An intermediate standard is also used: the <a href="https://linked.data.gov.au/def/fsdf-backbone">FSDF Backbone Model</a>, which profiles GeoSPARQL and SOSA and ensures that all objects conforming to it work well with the Australian Foundational Spatial Data Framework.</p>
+<p>The things this profile is a profile of - the things it constrains and is dependent on - as stated above, are shown graphically, in <a href="#figure-bh">Figure BH</a> below.</p>
+<p><a href="../../assets/bores-model/Profiles Hierarchy.svg"></p>
+<figure id="figure-bh">
+<p><img alt="" src="../../assets/bores-model/Profiles%20Hierarchy.svg" />
+  </p>
+<figcaption>Figure BH: Profile hierarchy of the Bores Model</figcaption>
+</figure>
+<p></a></p>
+<h3 id="resources">Resources</h3>
+<p>This Profile is made of many resources, all of which are contained in, or linked to from, this document. The resources and their roles are:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Resource</strong></th>
+<th><strong>Role</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profile Definition</td>
+<td>defines this set of resources - this table and text above</td>
+</tr>
+<tr>
+<td><a href="#specification">Specification</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:specification">specification</a></em><br />defines the profile elements in human-readable form</td>
+</tr>
+<tr>
+<td><a href="#schema">Schema</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:schema">schema</a></em><br />machine-readable version of the Specification's elements<br /><br />This is the Semantic Web model within this profile, online at <a href="https://linked.data.gov.au/def/borehole">https://linked.data.gov.au/def/borehole</a></td>
+</tr>
+<tr>
+<td><a href="#validators">Validator</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:validation">validation</a></em><br />machine-executable rules to test data for conformance to this Profile</td>
+</tr>
+<tr>
+<td><a href="#validators">Compounded Validator</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:validation">validation</a></em><br />this profile's validator &amp; those of all dependencies in one</td>
+</tr>
+<tr>
+<td><a href="#vocabularies">Vocabularies</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:vocabulary">vocabulary</a></em><br />defines terms used in the profile specification</td>
+</tr>
+<tr>
+<td><a href="#examples">Examples</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:schema">example</a></em><br />valid and invalid data files</td>
+</tr>
+<tr>
+<td><a href="#code-repository">Code Repository</a></td>
+<td><em><a href="https://www.w3.org/TR/dx-prof/#Role:schema">repository</a></em><br />an online repository storing all of this Profile's resources</td>
+</tr>
+</tbody>
+</table>
+<h2 id="specification">Specification</h2>
+<p>This Specification is the normative statement of requirements for data to conform to this Profile. This Specification is human-readable - this document - and does not provide either a formal model schema or data validators: those are provided for by the <em>schema</em> and <em>validator</em> resources listed in the <a href="#resources">Resources Section</a> above and described below.</p>
+<h3 id="introduction">Introduction</h3>
+<p>This profile is all about "bores", which are sometimes known by other names, such as "wells" or "drillholes" or even "boreholes", however in this model, "bore" is the overall thing and "borehole" is only a part. The concepts and relationships in this specification and in this Profile generally are not dependent on particular labels, and they may be used interchangeably, according to the equivalences given in the class definitions below in the <a href="#classes">Classes Section</a>: see the preferred and alternate labels for the classes.</p>
+<p><a href="#figure-bc">Figure BC</a> shows some major physical elements of a borehole that this profile caters for, as well as some of the alternative names for them, in <em>italics</em>.</p>
+<p><a href="../../assets/bores-model/Concepts.svg"></p>
+<figure id="figure-bc">
+<p><img alt="" src="../../assets/bores-model/Concepts.svg" />
+  </p>
+<figcaption>Figure BC: Bores Concepts. A Bores (also known as a Well) consists of one or more Bores (Wellbores) into the earth. Geology of the earth may be characterised according to Borehole Intervals (Wellbore Intervals). The Bores starts at a single origin point on the surface of the earth which may be on land or below the sea.</figcaption>
+</figure>
+<p></a></p>
+<p>This Specification defines data classes and properties that can be used to describe boreholes in line with the concepts of the Figure above. The classes and properties are defined in a following section after the total model which uses them is introduced next.</p>
+<h3 id="model">Model</h3>
+<p>Knowledge Graph data models define data <em>classes</em> with <em>properties</em> and, sometimes <em>axioms</em> which are logical rules that are applied to class and properties. This model, so far, only defines a few classes and properties for them, no axioms.</p>
+<p>The Figure BO below is a classes and properties diagram (formally, an <a href="../../background/#web-ontology-language-owl">OWL</a> diagram) of the major components of this profile's model. Where they match, the names of the classes in this Figure link them to the elements in the Concepts, <a href="#figure-bc">Figure BC</a> above.</p>
+<blockquote>
+<p>The Key for the elements in this Figure is the <a href="../../supermodel/#modelling-conventions">figure key for this Supermodel</a>.</p>
+</blockquote>
+<p><a href="../../assets/bores-model/Overview.svg"></p>
+<figure id="figure-bo">
+<p><img alt="" src="../../assets/bores-model/Overview.svg" /><br />
+</p>
+<figcaption>Figure BO: Overview of the model of this Bores Model. The Bore class may be related to zero or more Boreholes which, in turn, may have zero or more Borehole Intervals. Bores, Boreholes &amp; Borehole Intervals are geospatial Features and may have Geometries recorded and Samples may be taken from them. Bores may be attributed to Agents (people and organisations) with the attribution qualified with Roles. A number of vocabulary-based classifiers are available for the Bore, such as Borehole Purpose whose values are selected from controlled vocabularies supplied within this Profile.</figcaption>
+</figure>
+<p></a></p>
+<h3 id="namespaces">Namespaces</h3>
+<p>Namespaces provide unique identity to elements within this Profile - classes, properties, validation shapes and example data. Prefixes for namespaces are used to assist with documentation readability.</p>
+<p>Where you see a prefix used, something like <code>xxx:</code>, it is to be replaced with the namespace for complete term definition. For example, using the table below, we can understand that <code>bh:Bore</code> is equivalent to <code>http://linked.data.gov.au/def/borehole/Bore</code>.</p>
+<p>The following prefixed namespaces are used in class and property definition tables and the code examples following:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prefix</strong></th>
+<th><strong>Namespace</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ex:</code></td>
+<td><code>http://example.com/</code></td>
+<td>Generic, non-resolvable, examples</td>
+</tr>
+<tr>
+<td><code>bh:</code></td>
+<td><code>http://linked.data.gov.au/def/borehole/</code></td>
+<td>This profile's schema/model</td>
+</tr>
+<tr>
+<td><code>bsp:</code></td>
+<td><code>http://linked.data.gov.au/def/borehole-start-point/</code></td>
+<td>Borehole Start Point vocabulary, managed by the Geological Survey of Queensland</td>
+</tr>
+<tr>
+<td><code>dcat:</code></td>
+<td><code>http://www.w3.org/ns/dcat#</code></td>
+<td>Data Catalogue vocabulary: cataloguing international standard</td>
+</tr>
+<tr>
+<td><code>dcterms</code></td>
+<td><code>http://purl.org/dc/terms/</code></td>
+<td>Dublin Core Terms: basic library catalogue-style metadata</td>
+</tr>
+<tr>
+<td><code>geo:</code></td>
+<td><code>http://www.opengis.net/ont/geosparql#</code></td>
+<td>GeoSPARQL: Semantic Web spatial international standard</td>
+</tr>
+<tr>
+<td><code>prov:</code></td>
+<td><code>http://www.w3.org/ns/prov#</code></td>
+<td>Provenance Ontology: provenance data structures international standard</td>
+</tr>
+<tr>
+<td><code>rdfs:</code></td>
+<td><code>http://www.w3.org/2000/01/rdf-schema#</code></td>
+<td>RDF Schema vocabulary: Basic structural RDF elements</td>
+</tr>
+<tr>
+<td><code>skos:</code></td>
+<td><code>http://www.w3.org/2004/02/skos/core#</code></td>
+<td>Simple Knowledge Organization System: a model for controlled vocabularies</td>
+</tr>
+</tbody>
+</table>
+<p>These namespaces appear at the start of RDF data files and SPARQL query files in a form similar to this table, for example in E.g. 01 <a href="https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/borehole/examples/eg-01.ttl"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, you can see the prefix <code>bh</code>for the Bores namespace on the first line: <code>PREFIX bh: &lt;https://linked.data.gov.au/def/borehole/&gt;</code>.</p>
+<h3 id="classes">Classes</h3>
+<h4 id="bore">Bore</h4>
+<p><a id="Bore"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/Bore"><code>bh:Bore</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>Bore</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/alternateName" title="sdo:alternateName">Alternate Name</a></td>
+<td>Well, Drillhole</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td>A borehole is a narrow shaft, or set of shafts, bored in the ground with a common point of origin. A borehole may be constructed for many different purposes, including the extraction of water, other liquids (such as petroleum) or gases (such as natural gas), as part of a geotechnical investigation, environmental site assessment, mineral exploration, temperature measurement, as a pilot hole for installing piers or underground utilities, for geothermal installations, or for underground storage of unwanted substances, e.g. in carbon capture and storage.</td>
+</tr>
+<tr>
+<td>Expected Properties</td>
+<td><a href="#hasOriginPosition" title="bh:hasOriginPosition">has origin position</a><br /><a href="https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html#_property_geohasgeometry" title="geo:hasGeometry">has geometry</a> - used to indicate the geometry of the Bore<br /><a href="https://schema.org/hasPart" title="sdo:hasPart">has part</a> - for linking to <a href="#Borehole">Borehole</a> objects)<br /><a href="https://www.w3.org/TR/prov-o/#wasAttributedTo" title="prov:wasAttributedTo">was attributed to</a> - for linking to <a href="https://www.w3.org/TR/prov-o/#Agent">Agent</a> objects, via <a href="https://www.w3.org/TR/prov-o/#Attribution">Attribution</a> objects<br />classification properties, e.g. <a href="#hasPurpose" title="bh:hasPurpose">has purpose</a></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:historyNote">History Note</a></td>
+<td>This definition for a Bore is derived from of GeoSciML's definition for Borehole, however it is altered to cater for multi-shaft Bores/Wells. This is achieved by making Bore a container class for one of more Borehole objects which represent the individual shafts.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></p>
+<pre><code>ex:bh-01
+    a bh:Bore ;
+    bh:hasOriginPosition [
+        geo:asWKT &quot;POINT (153.083340 -27.325458)&quot;^^geo:wktLiteral ;
+    ] ;
+    bh:hasSurfaceCircumstance bsp:natural-ground-surface ;
+    prov:wasAttributedTo [
+        prov:agent &lt;https://orcid.org/0000-0002-8742-7730&gt; ;
+        dcat:hadRole ex:driller ;
+    ] ;
+    # other properties such as links to Bores
+.
+</code></pre>
+<p>This example shows a borehole, <code>ex:bh-01</code>, with an origin position at longitude 153.083340 E &amp; latitude 27.325458 S, a surface circumstance taken from a Geological Survey of Queensland vocabulary ("natural ground surface") and there's an attribution of the borehole to an Agent: Nicholas Car, identified by an IRI, with the role of driller.</p>
+<h4 id="bore_1">Bore</h4>
+<p><a id="Bore"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/Bore"><code>bh:Bore</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>Borehole</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/alternateName" title="sdo:alternateName">Alternate Name</a></td>
+<td>Wellbore</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td>A Bore is an individual shaft drilled into the ground.</td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:scopeNote">Scope Note</a></td>
+<td>A Bore is not the overall Bore or Well object but a distinct part of it. Every Borehole must be presented in relation to a Bore.</td>
+</tr>
+<tr>
+<td>Expected Properties</td>
+<td><a href="https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html#_property_geohasgeometry" title="geo:hasGeometry">has geometry</a> - used to indicate the geometry of the Borehole, perhaps as a LineString or a Polygon<br /><a href="https://schema.org/hasPart" title="sdo:hasPart">has part</a> - for linking to <a href="#BoreholeInterval">Borehole Interval</a> objects)</td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:historyNote">History Note</a></td>
+<td>This definition for a Bore is derived from of GeoSciML's definition for Borehole. Borehole is the class assigned to represent an individual shaft whereas Bore has been made a container class that contains one or more Borehole objects. This is to cater for multi-shaft Bores which are common in some industries, for example petroleum exploration where Bores are referred to as Wells and Boreholes as Wellbores.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></p>
+<pre><code>ex:bh-01
+    a bh:Bore ;
+    dcterms:hasPart 
+        ex:b-01 , 
+        ex:b-02 ;     
+.
+
+ex:b-01
+    a bh:Borehole ;
+    geo:hasGeometry [
+        geo:asWKT &quot;LINESTRING (...)&quot;^^geo:wktLiteral
+    ] ;
+.
+</code></pre>
+<h4 id="borehole-interval">Borehole Interval</h4>
+<p><a id="BoreholeInterval"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/BoreholeInterval"><code>bh:BoreholeInterval</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>Borehole Interval</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/alternateName" title="sdo:alternateName">Alternate Name</a></td>
+<td>Wellbore Interval</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties">Properties</h3>
+<h4 id="has-origin-position">has origin position</h4>
+<p><a id="hasOriginPosition"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hasOriginPosition"><code>bh:hasOriginPosition</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has origin position</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#domain" title="rdfs:domain">Domain</a></td>
+<td><a href="#Bore">Bore</a></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="has-log-element">has log element</h4>
+<p><a id="hasLogElement"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hasLogElement"><code>bh:hasLogElement</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has log element</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="has-purpose">has purpose</h4>
+<p><a id="hasPurpose"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hasPurpose"><code>bh:hasPurpose</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has purpose</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="has-inclination">has inclination</h4>
+<p><a id="hasInclination"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hasInclination"><code>bh:hasInclination</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has inclination</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="has-surface-circumstances">has surface circumstances</h4>
+<p><a id="hasSurfaceCircumstances"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hasSurfaceCircumstances"><code>bh:hasSurfaceCircumstances</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has surface circumstances</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="has-status">has status</h4>
+<p><a id="hasStatus"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hasStatus"><code>bh:hasStatus</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has status</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="had-drilling-method">had drilling method</h4>
+<p><a id="hasDrillingMethod"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/hadDrillingMethod"><code>bh:hadDrillingMethod</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>had drilling method</td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="has-vertical-reference">has vertical reference</h4>
+<p><a id="haVerticalReference"></a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRI</td>
+<td><a href="https://linked.data.gov.au/def/borehole/haVerticalReference"><code>bh:haVerticalReference</code></a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/name" title="sdo:name">Name</a></td>
+<td>has vertical reference</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#range" title="rdfs:range">Range</a></td>
+<td>A <code>skos:Concept</code> from the <a href="#vocabularies"><em>Depth Reference</em> vocabulary</a></td>
+</tr>
+<tr>
+<td><a href="https://schema.org/description" title="sdo:description">Description</a></td>
+<td><em>Coming...</em></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/skos-reference/#notes" title="skos:example">Example</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema</h2>
+<h2 id="validators">Validators</h2>
+<p>To prove that data conforms to this Profile, it must be validated. Since all the expected data for this Profile is RDF data, <a href="https://www.w3.org/TR/shacl/">SHACL</a> validation may be used. SHACL is a constraints language providing machine-executable rul formulation for RDF.</p>
+<p>This Profile presents its own validator which only includes tests for the rules specific to this profile and not those of the things this Profile is dependent on. However, a compounded validator is also given below which includes this Profile’s validator and all the dependent ones.</p>
+<p>The validator for this Profile's rules is available in machine-readable form here:</p>
+<ul>
+<li><a href="http://linked.data.gov.au/def/borehole/validator">http://linked.data.gov.au/def/borehole/validator</a></li>
+</ul>
+<p>The individual rules tested for by the validator are given in the next subsection.</p>
+<p>The compounded validator that includes all the rules within this profile's validator and all those from Standards and other Profiles that this profile is dependent on is available in machine-redable format here:</p>
+<ul>
+<li><a href="http://linked.data.gov.au/def/borehole/validator-compounded">http://linked.data.gov.au/def/borehole/validator-compounded</a></li>
+</ul>
+<p>Technical specification of the validation tool and help on how to perform automated validation are given in the <a href="#tools">Validation Tools</a> subsection below.</p>
+<h3 id="rules">Rules</h3>
+<p>These are the rules checked for by this profile's validator. They are referenced by identifier in the machine-readable validator above so that validation messages are able to be linked to these rules.</p>
+<h3 id="tools">Tools</h3>
+<p>Coming...</p>
+<h2 id="vocabularies">Vocabularies</h2>
+<p>This section lists the vocabularies that the Bores Model indicates for use. Some of these vocabularies are defined elsewhere - by other organisations and within standards - so this listing indicates how each is managed.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Vocabulary</strong></th>
+<th><strong>Profile access point</strong></th>
+<th><strong>Managing Organisation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Borehole Configuration<br /><br /><em>in preparation</em></td>
+<td>range value of<br /><a href="#hasInclination">has inclination</a></td>
+<td><a href="https://linked.data.gov.au/org/gswa">GSWA</a></td>
+</tr>
+<tr>
+<td>Borehole Drilling Method<br /><br />extension of CGI's <a href="https://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">Borehole Drilling Method</a></td>
+<td>range value of<br /><a href="#hasDrillingMethod">has drilling method</a></td>
+<td><a href="https://linked.data.gov.au/org/gswa">GSWA</a> / <a href="https://linked.data.gov.au/org/cgi">CGI</a></td>
+</tr>
+<tr>
+<td>Borehole Geometry<br /><br /><em>in preparation</em></td>
+<td>so far unknown</td>
+<td><a href="https://linked.data.gov.au/org/gswa">GSWA</a></td>
+</tr>
+<tr>
+<td><a href="https://linked.data.gov.au/def/borehole-purpose">Borehole Purpose</a></td>
+<td>range value of<br /><a href="#hasPurpose">has purpose</a></td>
+<td><a href="https://linked.data.gov.au/org/gsq">GSQ</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Kurrawong/gswa-vocabs/blob/main/vocabularies/borehole-statuses.ttl">Borehole Status</a></td>
+<td>range value of<br /><a href="#hasStatus">has status</a></td>
+<td><a href="https://linked.data.gov.au/org/gswa">GSWA</a></td>
+</tr>
+<tr>
+<td>Borehole start point setting<br /><br />derived from <a href="https://linked.data.gov.au/def/borehole-start-point">Borehole Start Point</a></td>
+<td>range value of<br /><a href="#hasSurfaceCircumstances">has surface circumstances</a></td>
+<td><a href="https://linked.data.gov.au/org/gswa">GSWA</a> / <a href="https://linked.data.gov.au/org/gsq">GSQ</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Kurrawong/gswa-vocabs/blob/main/vocabularies/borehole-subtype.ttl">Borehole Type</a></td>
+<td>range value of<br /><a href="http://purl.org/dc/terms/type" title="sdo:additionalType">type</a> for <a href="#Borehole">Borehole</a> class</td>
+<td><a href="https://linked.data.gov.au/org/gswa">GSWA</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<p>This section presents complete (valid, according to this profile) RDF data examples. The first is compounded from the snippet examples from the <a href="#specification">Specification Section</a> above. </p>
+<h4 id="eg-01">E.g. 01 <a href="https://github.com/nicholascar/gswa-supermodel/blob/main/rdf/borehole/examples/eg-01.ttl"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a></h4>
+<pre><code class="language-turtle">ex:bh-01
+    a bh:Bore ;
+    prov:wasAttributedTo [
+        a prov:Attribution ;
+        dcat:hadRole ex:driller ;
+        prov:agent &lt;https://orcid.org/0000-0002-8742-7730&gt;
+    ] ;
+    bh:hasOriginPosition [
+        a geo:Geometry ;
+        geo:asWKT &quot;POINT (153.083340 -27.325458)&quot;^^geo:wktLiteral
+    ] ;
+    bh:hasSurfaceCircumstance bsp:natural-ground-surface ;
+.
+
+&lt;https://orcid.org/0000-0002-8742-7730&gt;
+    a sdo:Person ;
+    sdo:email &quot;nick@kurrawong.ai&quot;^^xsd:anyURI ;
+    sdo:name &quot;Nicholas J. Car&quot;@en ;
+.
+</code></pre>
+<h2 id="code-repository">Code Repository</h2>
+<p>While a copy of all Bores Model resources are contained within the repository for the GSWA Supermodel, the home location of this profile is:</p>
+<ul>
+<li><a href="https://github.com/geological-survey-of-queensland/gsq-borehole-profile/">https://github.com/geological-survey-of-queensland/gsq-borehole-profile/</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Government of Western Australia (Department of Mines, Industry Regulation and Safety), 2022
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
