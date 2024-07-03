@@ -71,7 +71,7 @@ st:coreSection
 st:coreSectionHalf
     a skos:Concept ;
     rdfs:isDefinedBy <http://vocabulary.odm2.org/specimentype> ;
-    skos:definition "Half-cylindrical products of along-axis split of a section or its component fragments through a selected diameter"@en ;
+    skos:definition "Half-cylindrical products of along-axis split of a section or its components fragments through a selected diameter"@en ;
     skos:historyNote "SESAR Sample type CV. See http://www.geosamples.org/help/vocabularies#object"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Core section half"@en ;

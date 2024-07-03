@@ -48,11 +48,11 @@ gasm:benthic_dredge
 
 gasm:borehole_dst_test
     a skos:Concept ;
-    skos:altLabel "drill stem test"@en ;
+    skos:altLabel "drill stem tests"@en ;
     skos:broader gasm:borehole_fluid_sampling ;
-    skos:definition "A sample is collected during drilling by a test using a hydrostatic head to measure the formation pressures and to bring the formation fluids to the surface. The test can provide information for determination of potential petroleum producing formations and their exact depth."@en ;
+    skos:definition "A sample is collected during drilling by a tests using a hydrostatic head to measure the formation pressures and to bring the formation fluids to the surface. The tests can provide information for determination of potential petroleum producing formations and their exact depth."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "borehole DST test"@en ;
+    skos:prefLabel "borehole DST tests"@en ;
 .
 
 gasm:borehole_logging_tool
@@ -65,20 +65,20 @@ gasm:borehole_logging_tool
 
 gasm:borehole_prod_test
     a skos:Concept ;
-    skos:altLabel "well production test"@en ;
+    skos:altLabel "well production tests"@en ;
     skos:broader gasm:borehole_fluid_sampling ;
-    skos:definition "A borehole sampling test similar to DST test, but on a larger scale and under the production conditions after the well completion is conducted."@en ;
+    skos:definition "A borehole sampling tests similar to DST tests, but on a larger scale and under the production conditions after the well completion is conducted."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "borehole PROD test"@en ;
+    skos:prefLabel "borehole PROD tests"@en ;
 .
 
 gasm:borehole_wft_test
     a skos:Concept ;
-    skos:altLabel "wireline formation test"@en ;
+    skos:altLabel "wireline formation tests"@en ;
     skos:broader gasm:borehole_fluid_sampling ;
     skos:definition "A sample is taken from a borehole with a wireline formation tester by inserting a probe into a well wall to withdraw a small amount of formation fluid and to measure the formation pore pressure. This measurement can provide formation pressures along the well hole, thereby giving a measure of pressure with depth or along a horizontal borehole."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "borehole WFT test"@en ;
+    skos:prefLabel "borehole WFT tests"@en ;
 .
 
 gasm:bottle_incubation_dark
