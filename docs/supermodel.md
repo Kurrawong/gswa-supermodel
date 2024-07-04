@@ -26,7 +26,7 @@ This Supermodel relates to several other Supermodels in existence. The table bel
 Supermodel | Relationship
 --- | ---
 [Foundational Spatial Data Framework Supermodel](https://linked.data.gov.au/def/fsdf-supermodel) | The FSDF Supermodel was created by [Geoscience Australia](https://www.ga.gov.au) to integrate multiple foundational spatial datasets within Australia. It specifies both a structure for spatial data and particular fundamental objects to join datasets with, such as authoritative boundaries for Australia and the states.<br /><br />This supermodel adopts the FSDF Supermodel ways of working for spatial data
-Geological Survey of Queensland's Supermodel (_not online yet_) | A Supermodel for a similar agency to GSWA. It implements many of the same Background Models, Vocabularies and some of the same Component Models, such as [Boreholes](components.md#boreholes-profile)
+Geological Survey of Queensland's Supermodel (_not online yet_) | A Supermodel for a similar agency to GSWA. It implements many of the same Background Models, Vocabularies and some of the same Component Models, such as [Boreholes](components/index#boreholes-profile)
 
 ## Supermodel Structure
 
@@ -36,7 +36,7 @@ The structure of this Supermodel follows the conventions of the _Supermodel Mode
 
 Each of the main parts of this Supermodel is listed on the left.
 
-Individual data models - called _Component Models_ here - are given within the [Component Models Section](components.md).
+Individual data models - called _Component Models_ here - are given within the [Component Models Section](components/index).
 
 ## Modelling Conventions
 

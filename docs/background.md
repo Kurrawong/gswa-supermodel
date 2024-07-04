@@ -1,6 +1,6 @@
 # Background Models
 
-Background Models are models that this Supermodel's [Backbone Model](backbone.md) and [Component Models](components.md) profile (inherit from).
+Background Models are models that this Supermodel's [Backbone Model](backbone.md) and [Component Models](components/index) profile (inherit from).
 
 Background Models may not be directly referred to by data created according to the Backbone or Component Models, however all data made to conform to this Supermodel _must_ conform to all the Background Models.
 

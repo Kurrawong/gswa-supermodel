@@ -7,7 +7,7 @@
 
 ## Purpose 
 
-This component model describes the overarching hierarchy of geospatial Features used by GSWA to position Mines, Sites, Cratons, Basins etc. This Component Model is the immediate parent model of the [Sites & Admin Features](sites-admin.md) and [Geological Features](geo-features.md) component models.
+This component model describes the overarching hierarchy of geospatial Features used by GSWA to position Mines, Sites, Cratons, Basins etc. This Component Model is the immediate parent model of the [Sites & Admin Features](sites-admin.md) and [Geological Features](geofeature) component models.
 
 ## Model logic
 

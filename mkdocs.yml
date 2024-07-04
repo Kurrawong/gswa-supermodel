@@ -17,6 +17,8 @@ theme:
   palette:
     scheme: youtube
   logo: assets/classes-icon.svg
+  features:
+    - navigation.indexes
   # custom_dir: overrides
 nav:
     - 'index.md'
@@ -24,15 +26,15 @@ nav:
     - 'background.md'
     - 'backbone.md'
     - 'Component Models':
-        - 'Overview': 'components.md'
+        - 'components/index.md'
         - 'Features Hierarchy': 'components/features-hierarchy.md'
         - 'Sites & Admin Features': 'components/sites-admin.md'
         - 'Bore': 'components/bore.md'
         - 'Mine': 'components/mine.md'
-        - 'Mining Authorities': 'components/mining-authorities.md'
-        - 'Geological Features': 'components/geo-features.md'
+        - 'Mining Authorisation': 'components/mining-authorisation.md'
+        - 'GeoFeatures': 'components/geofeature.md'
         - 'Resource Occurrence': 'components/resource-occurrence.md'
-        - 'Samples': 'components/sample.md'
+        - 'Samples': 'components/geosample.md'
 
     - 'vocabularies.md'
     - 'validators.md'

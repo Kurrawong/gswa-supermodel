@@ -23,9 +23,9 @@ Currently, as of May 2023, the following elements have been established:
   * some aspects: this 
 * [Vocabularies](vocabularies.md)
 * some aspects of the , and the 
-* [Component Models](components.md)
+* [Component Models](components/index)
     * [Boreholes Profile](components/boreholes.md) - developed
-    * [Samples Profile](components/sample) - started
+    * [Samples Profile](components/geosample) - started
 
 ## License & Rights
 
