@@ -25,7 +25,7 @@ Currently, as of May 2023, the following elements have been established:
 * some aspects of the , and the 
 * [Component Models](components.md)
     * [Boreholes Profile](components/boreholes.md) - developed
-    * [Samples Profile](components/samples.md) - started
+    * [Samples Profile](components/sample) - started
 
 ## License & Rights
 

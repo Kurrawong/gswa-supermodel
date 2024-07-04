@@ -20,10 +20,13 @@ Profiles may profile multiple Standards, bringing together all the parts needed 
 
 Several of the Component Models within this Supermodel are full defined here. Others are defined elsewhere and just referred to from here. The table below lists the current Component Models.
 
-**Model** | **Domain(s)** | **Persistent Identifier** | **Notes**
---- | --- | --- | --- 
-[Features Hierarchy Model](components/features-hierarchy.md) | geospatial spatial features | `https://linked.data.gov.au/def/xxx` | Coming...
-[Geo Features](components/geo-features.md) | geospatial spatial features | `https://linked.data.gov.au/def/xxx` | child model of [Features Hierarchy Model](components/features-hierarchy.md)
-[Sites & Admin Features Model](components/sites-admin.md) | man-made & administrative spatial features | `https://linked.data.gov.au/def/xxx` | child model of [Features Hierarchy Model](components/features-hierarchy.md)
-[Borehole Model](components/boreholes.md) | boreholes | `https://linked.data.gov.au/def/borehole` | child model of [Sites & Admin Features Model](components/sites-admin.md)
-[Samples Model](components/samples.md) | samples, sampling | `https://linked.data.gov.au/def/xxx` | Coming...
+| **Model**                                                      | **Domain(s)**                                        | **Persistent Identifier**             | **Notes**                                                                   |
+|----------------------------------------------------------------|------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------|
+| [Features Hierarchy Model](components/features-hierarchy.md)   | geospatial spatial features                          | `https://linked.data.gov.au/def/xxx`  | Coming...                                                                   |
+| [Sites & Admin Features Model](components/sites-admin.md)      | man-made & administrative spatial features           | `https://linked.data.gov.au/def/xxx`  | child model of [Features Hierarchy Model](components/features-hierarchy.md) |
+| [Bore Model](components/bore.md)                               | bores, boreholes, wells etc                          | `https://linked.data.gov.au/def/bore` | child model of [Sites & Admin Features Model](components/sites-admin.md)    |
+| [Mine Model](components/mine.md)                               | mines                                                | `https://linked.data.gov.au/def/mine` | child model of [Sites & Admin Features Model](components/sites-admin.md)    |
+| [Mining Authorities Model](components/mining-authorities.md)   | tenements, permits, licenses etc., to do with mining | `https://linked.data.gov.au/def/xxx`  | child model of [Sites & Admin Features Model](components/sites-admin.md)    |
+| [GeoFeatures](components/geo-features.md)                      | geospatial spatial features                          | `https://linked.data.gov.au/def/xxx`  | child model of [Features Hierarchy Model](components/features-hierarchy.md) ||
+| [Sample Model](components/sample.md)                           | samples, sampling                                    | `https://linked.data.gov.au/def/xxx`  | Coming...                                                                   |
+| [Resource Occurrence Model](components/resource-occurrence.md) | spatial position and values of resources             | `https://linked.data.gov.au/def/xxx`  | child model of [GeoFeatures Model](components/features-hierarchy.md)        |

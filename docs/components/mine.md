@@ -1,3 +1,5 @@
+# Mine Model
+
 ## Overview
 
 <a href="../../assets/mines-Overview.svg">
@@ -37,7 +39,7 @@ Agents relations - of Mines and Mine Projects to People and Organisations - foll
 
 Authorities are licenses, permits etc. that give permission or exclusivity to own/operate Mines in designated areas.
 
-Authority modelling itself is not directly handled in this model (see the [Authorities Component Model](../components/authorities.md) for that) however common authorities associated with Mines and Projects are shown here.
+Authority modelling itself is not directly handled in this model (see the [Authorities Component Model](../components/mining-authorities) for that) however common authorities associated with Mines and Projects are shown here.
 
 ### Commodities
 

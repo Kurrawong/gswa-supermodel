@@ -1,4 +1,4 @@
-# Bores Model
+# Bore Model
 
 <a href="../../assets/bores-model/Concepts.svg">
 <figure id="figure-bc" markdown>

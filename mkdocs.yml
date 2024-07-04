@@ -26,13 +26,14 @@ nav:
     - 'Component Models':
         - 'Overview': 'components.md'
         - 'Features Hierarchy': 'components/features-hierarchy.md'
-        - 'Geological Features': 'components/geo-features.md'
         - 'Sites & Admin Features': 'components/sites-admin.md'
-        - 'Bores': 'components/bores.md'
-        - 'Mines': 'components/mines.md'
-        - 'Resource Occurence': 'components/resource-occurrence.md'
-        - 'Samples': 'components/samples.md'
-        - 'Authorities': 'components/authorities.md'
+        - 'Bore': 'components/bore.md'
+        - 'Mine': 'components/mine.md'
+        - 'Mining Authorities': 'components/mining-authorities.md'
+        - 'Geological Features': 'components/geo-features.md'
+        - 'Resource Occurrence': 'components/resource-occurrence.md'
+        - 'Samples': 'components/sample.md'
+
     - 'vocabularies.md'
     - 'validators.md'
 

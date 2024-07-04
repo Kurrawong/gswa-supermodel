@@ -1,3 +1,5 @@
+# Mining Authorities 
+
 ## Overview
 
 <a href="../../assets/authorities-Overview.svg">
