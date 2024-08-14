@@ -121,6 +121,8 @@ Note that while it is possible to retrieve _some_ RDF from DOIs, this is basic r
 
 To create an IRI, we need to consider the Case of object the IRI is for, as per the cases above in the [Overview](pids.md#overview). Knowing that, we can select the pattern from the table below.
 
+#### Patterns per Case
+
 | Case                                  | Pattern                                                  | Elements                                                                                                                                                                                                                                                                                                          |
 |---------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1. **high-level definitional object** | `https://linked.data.gov.au/def/{ID}`                    | `{ID}` - may be anything acceptable to the [Australian Government Linked Data Working Group](https://linked.data.gov.au) which means be in accordance with their [Guidelines](https://www.linked.data.gov.au/guidelines). See [Registration](pids.md#registration) below.                                         |
