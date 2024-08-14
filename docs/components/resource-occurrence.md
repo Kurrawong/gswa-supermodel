@@ -1,4 +1,6 @@
-## Overview
+# Resource Occurrence Model
+
+## Overview 
 
 Resource Occurrences are areas/volumes of the earth's crust that contain a resource of interest for exploitation. The general logic of an RO is that there is both an occurrence - presence or absence of something - that is interesting - perhaps in higher concentrations than elsewhere - and an exploitation potential. This model doesn't directly deal with exploitation potential and restricts its modelling to the _occurrence_ part only. 
 

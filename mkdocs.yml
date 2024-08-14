@@ -19,10 +19,10 @@ theme:
   logo: assets/classes-icon.svg
   features:
     - navigation.indexes
+    - toc.follow
   # custom_dir: overrides
 nav:
     - 'index.md'
-    - 'supermodel.md'
     - 'background.md'
     - 'backbone.md'
     - 'Component Models':
@@ -35,8 +35,7 @@ nav:
         - 'GeoFeatures': 'components/geofeature.md'
         - 'Resource Occurrence': 'components/resource-occurrence.md'
         - 'Samples': 'components/geosample.md'
-
     - 'vocabularies.md'
-    - 'validators.md'
+    - 'pids.md'
 
 # SVG resizer: https://svg-converter.com/resize

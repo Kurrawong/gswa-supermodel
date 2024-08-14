@@ -1,16 +1,16 @@
 # Bore Model
 
-## Definition
+## Overview
 
 A model that describes physical, functional and operational aspects of Bores, sometimes known as Wells.
 
-## Location
+### Location
 
 This model is online at:
 
 * **<https://linked.data.gov.au/def/bore>**
 
-## Place in Supermodel
+### Place in Supermodel
 
 Bores are a special kind of _Site_ within the [Sites & Admin Features](sites-admin.md) model. 
 
