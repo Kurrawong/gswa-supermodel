@@ -98,6 +98,7 @@ SKOS is used for the representation of controlled lists of terms, sometimes know
 
 This supermodel uses SKOS to represent vocabularies used for the classification of other objects, for example the theme of a Dataset which is indicated by its association with a [Fields of Research Code](https://linked.data.gov.au/def/anzsrc-for/2020). The vocabulary of FoR Codes is a SKOS `Concept Hierarchy` and each Code within it a `Concept`. 
 
+
 ### Web Ontology Language (OWL)
 
 [https://www.w3.org/TR/owl2-primer/](https://www.w3.org/TR/owl2-primer/)
@@ -105,7 +106,6 @@ This supermodel uses SKOS to represent vocabularies used for the classification 
 "[OWL] ...is an ontology language for the Semantic Web with formally defined meaning. OWL ontologies provide classes, properties, individuals, and data values"
 
 This Supermodel and all the models within this profile hierarchy, except for GeoSciML, use OWL as their modelling language or system.
-
 
 ## Models not in the hierarchy
 
