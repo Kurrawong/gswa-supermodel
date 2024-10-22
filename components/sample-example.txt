@@ -1,0 +1,101 @@
+
+## Example Data
+
+Here is example RDF data for the union of the examples above:
+
+```
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <http://example.com/>
+PREFIX gas: <https://linked.data.gov.au/def/gas/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX gswa: <https://linked.data.gov.au/def/gswa-supermodel/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+ex:observation-y
+    a sosa:Observation ;
+    sosa:hasFeatureOfInterest ex:sample-x ;
+    sosa:userProcedure ex:procedure-z ;
+    sosa:observedProperty ex:occurence-of-gold-in-a-matrix ;
+    sosa:hasResult [
+        a sosa:Result ;
+        qudt:unit unit:PPM ;
+        rdf:value "124.0"^^xsd:float ;
+    ] ;
+.
+
+ex:sample-x
+    a sosa:Sample ;
+    sosa:isSampleOf ex:sample-n ;
+    gas:material ex:Rock ;
+    gas:samplingMethod ex:CoreDrill ;
+    sdo:additionalType ex:CoreSectionHalf ;
+    prov:qualifiedAttribution [
+        prov:agent [
+            a sdo:Person ;
+            sdo:name "John Smith" ;
+        ] ;
+        prov:hadRole ex:Collector ;
+    ] ;
+    prov:generatedAtTime [
+        a time:Instant ;
+        time:inXSDDate "2023-06-09"^^xsd:date ;
+    ] ;
+    gas:samplingLocation [
+        a geo:Geometry ;
+        geo:asWKT "POINT (...)"^^geo:wktLiteral ;
+    ] ;
+    gas:currentLocation [
+        a geo:Feature ;
+        dcterms:description "Rock Shed, Shelf 12, Box 32" ;
+    ] ;
+.
+
+ex:sample-n
+    a sosa:Sample ;
+    sosa:isSampleOf ex:sample-n ;
+.
+
+ex:rock-unit-o
+    a gswa:GeologicalFeature ;
+    sosa:hasProperty ex:occurence-of-gold-in-a-matrix ;
+.
+
+ex:procedure-z
+    a sosa:Procedure ;
+.
+
+unit:PPM
+    a qudt:Unit ;
+.
+
+ex:occurence-of-gold-in-a-matrix
+    a skos:Concept ;
+.
+
+ex:observation-collection-p
+    a sosa:ObservationCollection , dcat:Dataset ;
+    prov:wasAttributedTo ex:company-q ;
+    dcterms:spatial ex:rock-unit-o ;
+    dcat:theme ex:occurence-of-gold-in-a-matrix ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:format "application/vnd.ms-excel" ;
+        dcat:downloadURL "http://somewhere.com/blob/1"^^xsd:anyURI ;
+    ] ;
+    rdfs:member ex:observation-y ;
+.
+
+ex:company-q
+    a sdo:Organization ;
+.
+```
