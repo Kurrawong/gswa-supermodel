@@ -70,7 +70,7 @@ This Supermodel uses SOSA to link `Result` instances, which are data objects suc
 
 ### GeoSPARQL 
 
-[http://www.opengis.net/doc/IS/geosparql/1.1](https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html)
+<http://www.opengis.net/doc/IS/geosparql/1.1>
 
 "...supports representing and querying geospatial data on the Semantic Web. GeoSPARQL defines a vocabulary for representing geospatial data in RDF. It also defines extensions to the SPARQL query language for processing geospatial data."
 
