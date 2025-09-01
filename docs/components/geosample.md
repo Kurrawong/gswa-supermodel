@@ -1,4 +1,4 @@
-# Samples Model
+# Geosamples Model
 
 <a href="../../assets/geosamples-overview.svg">
 <figure id="figure-bh" markdown style="width:70%">

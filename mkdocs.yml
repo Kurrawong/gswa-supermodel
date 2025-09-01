@@ -27,14 +27,12 @@ nav:
     - 'backbone.md'
     - 'Component Models':
         - 'components/index.md'
-        - 'Features Hierarchy': 'components/features-hierarchy.md'
-        - 'Sites & Admin Features': 'components/sites-admin.md'
+        - 'GeoFeatures Hierarchy': 'components/geofeatures-hierarchy.md'
         - 'Bore': 'components/bore.md'
         - 'Mine': 'components/mine.md'
         - 'Mining Authorisation': 'components/mining-authorisation.md'
-        - 'GeoFeatures': 'components/geofeature.md'
         - 'Resource Occurrence': 'components/resource-occurrence.md'
-        - 'Samples': 'components/geosample.md'
+        - 'Geosamples': 'components/geosample.md'
     - 'vocabularies.md'
     - 'pids.md'
 
