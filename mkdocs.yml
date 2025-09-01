@@ -32,7 +32,7 @@ nav:
         - 'Mine': 'components/mine.md'
         - 'Mining Authorisation': 'components/mining-authorisation.md'
         - 'Resource Occurrence': 'components/resource-occurrence.md'
-        - 'Geosamples': 'components/geosample.md'
+        - 'Geosample': 'components/geosample.md'
     - 'vocabularies.md'
     - 'pids.md'
 

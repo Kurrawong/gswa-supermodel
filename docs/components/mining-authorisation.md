@@ -1,4 +1,4 @@
-# Mining Authorisation 
+# Mining Authorisation Model
 
 ## Overview
 
