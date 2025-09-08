@@ -1,3 +1,5 @@
+# Geo Features Hierarchy
+
 <a href="../../assets/geofh/hierarchy.svg">
 <figure id="figure-gfh" markdown style="width:70%">
   ![](../assets/geofh/hierarchy.svg)
@@ -7,7 +9,7 @@
 
 ## Purpose 
 
-This component model describes the overarching hierarchy of geospatial features classes used by GSWA to describe Mines, Sites, Cratons, Basins etc. 
+This component model describes the overarching hierarchy of geological and geospatial features classes used by GSWA to describe Mines, Sites, Cratons, Basins etc. and also Tenement Areas, Administrative Areas etc.
 
 The purpose of making a single hierarchy it to allow for the orderly integration of data about all types of feature. 
 
@@ -21,7 +23,6 @@ The logic of this component model is shown in the class hierarchy diagram above:
 * visible man-made features are Sites or a specialised form of Site, such as Bore
 * Administrative Features are man-mad features that may not be visible on the ground, e.g. a Tenement Area which may exist only in a GIS system
 * Resource Occurrences - where economically viable resources are - are natural but not geological features since they have non purely geological logic used to define them
-
 
 ## Hierarchy
 
