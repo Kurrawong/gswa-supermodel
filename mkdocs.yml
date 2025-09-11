@@ -27,7 +27,7 @@ nav:
     - 'backbone.md'
     - 'Component Models':
         - 'components/index.md'
-        - 'GeoFeatures Hierarchy': 'components/geofeatures-hierarchy.md'
+        - 'GeoFeatures Hierarchy': 'components/geofh.md'
         - 'Bore': 'components/bore.md'
         - 'Mine': 'components/mine.md'
         - 'Mining Authorisation': 'components/mining-authorisation.md'
