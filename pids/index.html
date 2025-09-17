@@ -1,0 +1,1179 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../vocabularies/">
+      
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Persistent Identifiers - GSWA Supermodel</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="youtube" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#persistent-identifiers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GSWA Supermodel" class="md-header__button md-logo" aria-label="GSWA Supermodel" data-md-component="logo">
+      
+  <img src="../assets/classes-icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GSWA Supermodel
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Persistent Identifiers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GSWA Supermodel" class="md-nav__button md-logo" aria-label="GSWA Supermodel" data-md-component="logo">
+      
+  <img src="../assets/classes-icon.svg" alt="logo">
+
+    </a>
+    GSWA Supermodel
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Supermodel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Background Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backbone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backbone Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../components/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Component Models
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Component Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/geofh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GeoFeatures Hierarchy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/bore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bore
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/mine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/mining-authorisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mining Authorisation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/resource-occurrence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resource Occurrence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/geosample/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Geosample
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vocabularies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vocabularies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Persistent Identifiers
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Persistent Identifiers
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iris" class="md-nav__link">
+    <span class="md-ellipsis">
+      IRIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Namespaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reusing-existing-iris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reusing Existing IRIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternate Identifiers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternate Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-iris-for-things-with-alternate-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating IRIs for things with Alternate Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-the-alternate-identifiers-to-the-iri" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linking the Alternate Identifier(s) to the IRI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dois-igsns" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOIs, IGSNs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-iris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating IRIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating IRIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patterns-per-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns per Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-per-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes per Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iris" class="md-nav__link">
+    <span class="md-ellipsis">
+      IRIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Namespaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reusing-existing-iris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reusing Existing IRIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternate Identifiers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternate Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-iris-for-things-with-alternate-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating IRIs for things with Alternate Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-the-alternate-identifiers-to-the-iri" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linking the Alternate Identifier(s) to the IRI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dois-igsns" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOIs, IGSNs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-iris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating IRIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating IRIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patterns-per-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns per Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-per-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes per Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="persistent-identifiers">Persistent Identifiers</h1>
+<h2 id="overview">Overview</h2>
+<p>This document provide a policy for the creation of Persistent Identifiers (PIDs) for the following cases:</p>
+<ol>
+<li><strong>high-level definitional object</strong><ul>
+<li>models within <a href="../">GSWA's Supermodel</a></li>
+<li>GSWA vocabularies</li>
+<li>stand-alone collections of Concepts</li>
+</ul>
+</li>
+<li><strong>low-level definitional object</strong><ul>
+<li>Classes, Concepts, Predicates &amp; Datatypes defined within high-level definitional objects</li>
+</ul>
+</li>
+<li><strong>high-level data object</strong><ul>
+<li>datasets of content created in accordance with this Supermodel's models</li>
+</ul>
+</li>
+<li><strong>low-level data object</strong><ul>
+<li>instances of classes within high-level data object</li>
+</ul>
+</li>
+</ol>
+<h2 id="iris">IRIs</h2>
+<p>The PIDs used by the GSWA Supermodel are all <a href="https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier">Internationalized Resource Identifiers (IRIs)</a> which are web page URLs that:</p>
+<ul>
+<li>can be used in data to identify things without necessarily resolving to a web page</li>
+<li>can be managed with domain name ownership</li>
+<li>allow for a specified range of characters<ul>
+<li>e.g. non-English alphabets</li>
+</ul>
+</li>
+<li>have validation rules<ul>
+<li>similar to web address (URL) rules</li>
+<li>e.g. no spaces</li>
+</ul>
+</li>
+</ul>
+<p>The cases of object above <em>MUST</em> be identified with IRI PIDs, so where something may have another kind of PID, perhaps an internal database ID, this must be treated as secondary. See <a href="./#alternate-identifiers">Alternate Identifiers</a> below.</p>
+<p>IRIs always consist of a:</p>
+<ul>
+<li><em>scheme</em><ul>
+<li>technical system, usually "https" </li>
+</ul>
+</li>
+<li><em>authority</em><ul>
+<li>the owned Domain name, e.g. linked.data.gov.au/</li>
+</ul>
+</li>
+<li><em>path</em><ul>
+<li>things after the authority, separated by '/'</li>
+<li>e.g. dataset/x</li>
+</ul>
+</li>
+<li><em>ID</em><ul>
+<li>individual object identifier - last part of the path</li>
+<li>from above, 'x'</li>
+</ul>
+</li>
+</ul>
+<h2 id="namespaces">Namespaces</h2>
+<p>The namespace, or basis, to be used for all cases above is the <em>authority</em>:</p>
+<p><code>https://linked.data.gov.au/</code></p>
+<p>This namespace is managed by the <a href="https://linked.data.gov.au">Australian Government Linked Data Working Group</a> on behalf of all Australian governments and is intended to provide persistent identifiers for all Australian government-relevant <a href="https://www.w3.org/wiki/LinkedData">Linked Data</a>. GSWA has registered identifiers for the cases above and is required to keep doing so for new items. See the <a href="./#registration">Registration</a> section below for more details. </p>
+<h2 id="reusing-existing-iris">Reusing Existing IRIs</h2>
+<p>If an object that GSWA wishes to identify already has a functioning IRI, it <em>SHOULD</em> be reused directly, wherever possible. </p>
+<p>Some examples:</p>
+<ul>
+<li>Concepts from existing vocabularies<ul>
+<li>"Jurassic" from the <a href="https://stratigraphy.org/">International Commission on Stratigraphy</a>'s <a href="https://stratigraphy.org/ICSchart/data/ChronostratChart2023-09.ttl">RDF version of the Chart</a>: <code>http://resource.geosciml.org/classifier/ics/ischart/Jurassic</code><ul>
+<li>this is used in <a href="https://vocabulary.gswa.kurrawong.ai/v/vocab/ics:ischart/schrt:Jurassic">GSWA's local copy of the Chart</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Objects in existing Linked Data datasets<ul>
+<li><a href="https://linked.data.gov.au/dataset/asgsed3/SA3/50903">Wheat Belt - South Statistical Area 3</a> from the <a href="https://asgs.linked.fsdf.org.au/dataset/asgsed3">Australian Statistical Geography Standard Linked Data API</a>: <code>https://linked.data.gov.au/dataset/asgsed3/SA3/50903</code><ul>
+<li>GSWA could indicate that administrative areas are within this region</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>GSWA <em>SHOULD NOT</em> reuse an existing IRI only when it is know that the IRI does not function.</p>
+<h2 id="alternate-identifiers">Alternate Identifiers</h2>
+<p>The canonical form of model content and instance data created according to this Supermodel is <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a> and RDf only uses IRIs for element identification.</p>
+<p>If a real-world or data object has another form of identifier that should be preserved, such as a <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a>, <a href="https://en.wikipedia.org/wiki/International_Generic_Sample_Number">IGSN</a>, internal database ID, lookuptable key, chemical element symbol, mineral code etc., it <em>MUST</em> be done so linking to IRI PID.</p>
+<h3 id="creating-iris-for-things-with-alternate-identifiers">Creating IRIs for things with Alternate Identifiers</h3>
+<p>IRIs for all objects, whether they have alternate identifiers or not, should be done in the same general way - in accordance with this document. This policy leaves open the logic used to generate the <code>ID</code> part of an <code>IRI</code> so it could be generated from an alternate identifier. Some made-up examples:</p>
+<ul>
+<li>Vocabulary term of "Gold" as a Critical Mineral using the commonly known chemical element symbol <code>Au</code> for the IRI ID<ul>
+<li><code>https://linked.data.gov.au/def/critical-minerals/au</code></li>
+</ul>
+</li>
+<li>Instance of a Rock Sample with an internal Sample Number of S1234 in Dataset X<ul>
+<li><code>https://linked.data.gov.au/dataset/x/sample/s1234</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="linking-the-alternate-identifiers-to-the-iri">Linking the Alternate Identifier(s) to the IRI</h3>
+<p>Within RDF realisations of definitional data - models and vocabularies - and instance data - datasets containing objects, links between alternate, non-IRI, identifiers and IRIs can be linked with the <code>[schema:identifier](https://schema.org/identifier)</code> predicate and a custom datatype like this:</p>
+<pre><code class="language-turtle">&lt;https://linked.data.gov.au/dataset/x/sample/s1234&gt;
+    a sosa:Sample ;
+    schema:name &quot;Sample 1234&quot; ;
+    # ... other predicates
+    schema:identifier &quot;S1234&quot;^^&lt;https://linked.data.gov.au/def/geosamples/datatype/gswa-sample-id&gt; ;
+.
+</code></pre>
+<p>In the example code above, a dummy sample with IRI <code>https://linked.data.gov.au/dataset/x/sample/s1234</code> is linked to its "GSWA Sample ID" with the predicate <code>schema:identifier</code> which indicates a value of "S1234" with a special (dummy) datatype of <code>https://linked.data.gov.au/def/geosamples/datatype/gswa-sample-id</code>. This datatype describes the identifier regime, perhaps like this:</p>
+<pre><code class="language-turtle">&lt;https://linked.data.gov.au/def/geosamples/datatype/gswa-sample-id&gt;
+    a rdfs:Datatype ;
+    schema:name &quot;GSWA's Sample ID&quot; ;
+    schema:description &quot;IDs for physical samples issued by GSWA's XYZ database and controlled by the Primary Key of the [Samples] table&quot; ;
+    sh:regex &quot;^S(\d{4,6})$&quot; ;
+.
+</code></pre>
+<p>The description of the datatype above gives human-readable details about what the GSWA Sample ID is, where it comes from, how it is managed and who to contact about it. It also provides validation logic - the pattern indicated by "^S(\d{4,6})$" - which mandated such an ID start with the letter 'S' which is then followed by 4 to 6 digits, e.g. S1234 or S12345. Datatyle definitions need not contain such validation logic. </p>
+<h3 id="dois-igsns">DOIs, IGSNs</h3>
+<p><a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a>s &amp; <a href="https://en.wikipedia.org/wiki/International_Generic_Sample_Number">IGSN</a>s often act a lot like IRIs: they have web address form and resolve online when clicked. However, they do not deliver usable Linked Data information, only web pages. For this reason, they are considered non-IRIs and should be used as alternate identifiers, not IRIs to be directly reused. </p>
+<p>Note that while it is possible to retrieve <em>some</em> RDF from DOIs, this is basic registry metadata and not the detailed information that a fully-functioning Linked Data IRI would deliver </p>
+<h2 id="creating-iris">Creating IRIs</h2>
+<p>To create an IRI, we need to consider the Case of object the IRI is for, as per the cases above in the <a href="./#overview">Overview</a>. Knowing that, we can select the pattern from the table below.</p>
+<h4 id="patterns-per-case">Patterns per Case</h4>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Pattern</th>
+<th>Elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>high-level definitional object</strong></td>
+<td><code>https://linked.data.gov.au/def/{ID}</code></td>
+<td><code>{ID}</code> - may be anything acceptable to the <a href="https://linked.data.gov.au">Australian Government Linked Data Working Group</a> which means be in accordance with their <a href="https://www.linked.data.gov.au/guidelines">Guidelines</a>. See <a href="./#registration">Registration</a> below.</td>
+</tr>
+<tr>
+<td>2. <strong>low-level definitional object</strong></td>
+<td><code>https://linked.data.gov.au/def/{ID}/{LOW-LEVEL-ID}</code></td>
+<td><code>{ID}</code> - as per the requirements above <br /><code>{LOW-LEVEL-ID}</code> - distinct within scope of containing high-level object, starting upper-letter if a Class, starting lower-case letter if a Predicate</td>
+</tr>
+<tr>
+<td>3. <strong>high-level data object</strong></td>
+<td><code>https://linked.data.gov.au/dataset/{ID}</code></td>
+<td>As per Case 1</td>
+</tr>
+<tr>
+<td>4. <strong>low-level definitional object</strong></td>
+<td><code>https://linked.data.gov.au/dataset/{ID}/{LOW-LEVEL-ID}</code> or<br /><code>https://linked.data.gov.au/dataset/{ID}/{CLASS-SIGNIFIER}/{LOW-LEVEL-ID}</code></td>
+<td>As per Case 2 or use of an additional path element, <code>{CLASS-SIGNIFIER}</code>, to indicate the class of object as well as its individual ID.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="classes-per-case">Classes per Case</h4>
+<p>Specific classes of object per Case as listed above are:</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>high-level definitional object</strong></td>
+<td><code>owl:Ontology</code><br /><code>skos:ConceptScheme</code><br /><code>skos:Collection</code></td>
+</tr>
+<tr>
+<td>2. <strong>low-level definitional object</strong></td>
+<td><code>owl:Class</code><br /><code>rdfs:Property</code> and all forms of OWL Property<br /><code>skos:Concept</code><br /><code>sh:NodeShape</code><br /><code>sh:PropertyShape</code></td>
+</tr>
+<tr>
+<td>3. <strong>high-level data object</strong></td>
+<td><code>schema:Dataset</code><br /><code>schema:DataCatalog</code></td>
+</tr>
+<tr>
+<td>4. <strong>low-level definitional object</strong></td>
+<td>everything else not listed in Cases 1 - 3</td>
+</tr>
+</tbody>
+</table>
+<h4 id="examples">Examples</h4>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>high-level definitional object</strong></td>
+<td>Ontology - <code>https://linked.data.gov.au/def/bore</code> - <em>Bore Model</em><br />ConceptScheme - <code>https://linked.data.gov.au/def/borehole-drilling-method-western-australia</code> - <em>Borehole Drilling Method</em> vocabulary</td>
+</tr>
+<tr>
+<td>2. <strong>low-level definitional object</strong></td>
+<td>Class - <code>https://linked.data.gov.au/def/bore/Bore</code> - <em>Bore</em> class in Bore Model<br />Property - <code>https://linked.data.gov.au/def/bore/hadDrillingMethod</code> - <em>had drilling method</em> property in Bore Model<br />Concept - <code>https://linked.data.gov.au/def/borehole-drilling-method-western-australia/non-rotary</code> - <em>non-rotary drilling</em> concept in <em>Borehole Drilling Method</em> vocabulary<br />NodeShape - <em>coming soon</em><br />PropertyShape - <em>coming soon</em></td>
+</tr>
+<tr>
+<td>3. <strong>high-level data object</strong></td>
+<td>Dataset - <em>coming soon</em><br />DataCatalog - <em>coming soon</em></td>
+</tr>
+<tr>
+<td>4. <strong>low-level definitional object</strong></td>
+<td><em>coming soon</em></td>
+</tr>
+<tr>
+<td>x. <strong>Organisations</strong></td>
+<td><code>https://linked.data.gov.au/org/gswa</code> - GSWA within the AGLDWG Org Register</td>
+</tr>
+</tbody>
+</table>
+<h2 id="agents">Agents</h2>
+<p>Agents - Organisations and People - have a couple of special considerations. When they are referred to in data, they would be considered instances of a <em>low-level definitional object</em> however two particular sources of existing IRIs for them <em>SHOULD</em> be considered:</p>
+<ul>
+<li>Organisations<ul>
+<li>AGLDWG Org Register: <a href="https://catalogue.linked.data.gov.au/organisations">https://catalogue.linked.data.gov.au/organisations</a></li>
+<li>Australian Government organisations Linked Data IRIs </li>
+<li>reuse if exists or register if it doesn't</li>
+</ul>
+</li>
+<li>People<ul>
+<li>ORCID: https://orcid.org/</li>
+<li>personal IDs for researchers</li>
+<li>reuse if the person has an ID there</li>
+</ul>
+</li>
+</ul>
+<h2 id="registration">Registration</h2>
+<p>The process for registering a <code>linked.data.gov.au</code>-based PID is to request a new one from the Australian Government Linked Data Working Group via their catalogue system at <a href="https://catalogue.linked.data.gov.au">https://catalogue.linked.data.gov.au</a>.</p>
+<p>The process is as follows:</p>
+<ol>
+<li><em>create</em> an identifier pattern in accordance with the AGLDWG <a href="https://www.linked.data.gov.au/guidelines">Guidelines</a></li>
+<li><em>submit</em> a request for the PID pattern to the AGLDWG via the <a href="https://catalogue.linked.data.gov.au/">AGLDWG Catalogue</a><ul>
+<li>you will need an account on that system to do this - GSWA already has members with such accounts</li>
+<li>the AGLDWG will <em>ACCEPT</em> the PID pattern if valid according to the Guidelines</li>
+<li>the AGLDWG will then request a resolution target - where it is to resolve to</li>
+</ul>
+</li>
+<li><em>implement</em> the PID in data and systems so that it may resolve to content</li>
+<li><em>update</em> the PID resolution patterns<ul>
+<li>either GSWA or AGLDWG staff can update the linked.data.gov.au PID patterns to resolve to resolution targets</li>
+<li>if valid (resolving) the AGLDWG will mark the PID pattern <em>STABLE</em></li>
+<li>see GSWA's existing PID Patterns at the <a href="https://github.com/AGLDWG/pid-proxy/blob/master/conf/linked.data.gov.au/org/gswa.conf">PID Proxy Config for GSWA</a> and the <a href="https://github.com/AGLDWG/pid-proxy/blob/master/test-suite/linked.data.gov.au/org/gswa.json">tests for the PID Patterns</a></li>
+</ul>
+</li>
+</ol>
+<p>Once <em>STABLE</em>, GSWA may allocate sub-PIDs within that registered PID however they like from the AGLDWG's point-of-view. Such allocation should follow this policy's <a href="#sub-pids">Sub-PIDs</a> section.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Government of Western Australia (Department of Mines, Industry Regulation and Safety), 2022
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
