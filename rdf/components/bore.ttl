@@ -1,0 +1,197 @@
+PREFIX : <https://linked.data.gov.au/def/bore/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofh: <https://linked.data.gov.au/def/bore/>
+PREFIX ont: <https://linked.data.gov.au/def/geofh>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:1.0 schema:name "1.0" .
+
+ont:
+    a owl:Ontology ;
+    owl:versionIRI :1.0 ;
+    schema:codeRepository "https://github.com/Kurrawong/gswa-supermodel/"^^xsd:anyURI ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:dateCreated "2023-05-15"^^xsd:date ;
+    schema:dateModified "2025-09-17"^^xsd:date ;
+    schema:dateIssued "2025-02-15"^^xsd:date ;
+    schema:description """A model that describes physical, functional and operational aspects of Bores, sometimes known as Wells""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Bore Model" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1.0" ;
+    skos:historyNote """1.0 - Sep 2025 - First complete version released into the GSWA Knowledge Graph""" ;
+    schema:hasPart 
+        :Bore ,
+        :Borehole ,
+        :BoreholeInterval ,
+        :Drillhole ,
+        :hasOriginPosition ,
+        :hasLogElement ,
+        :hasPurpose ,
+        :hasSurfaceCircumstances ,
+        :hasStatus ,
+        :hadDrillingMethod ;
+.
+
+
+:Bore
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    schema:alternateName "Well" ;
+    rdfs:subClassOf geofh:Site ;
+    schema:description "A collection of Boreholes, starting from a single point on the earth's surface" ;
+    schema:name "Bore" ;
+    skos:historyNote """Named Bore not Borehole to match Well concept""" ;
+    skos:example """
+:ex-1
+    a bore:Bore ;
+    schema:hasPart
+        :bh-1 ,
+        :bh-2 ;
+    bore:hasOriginPosition [
+        a geo:Geometry ;
+        geo:asWKT "POINT (124.2380 -27.0669)"^^geo:wktLiteral ;
+    ] ;
+    bore:hasPurpose <https://linked.data.gov.au/def/borehole-purpose-wa/metallurgical> ;
+    bore:hasStatus <http://linked.data.gov.au/def/borehole-status/abandoned-too-deep> ;
+    bore:hadDrillingMethod <https://linked.data.gov.au/def/borehole-drilling-method-western-australia/conventional-core> ;
+.
+""" ;
+.
+
+:Borehole
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    schema:alternateName "Wellbore" ;
+    schema:description "A narrow shaft drilled into the earth" ;
+    schema:name "Borehole" ;
+    skos:historyNote """Named Borehole not Bore to match Wellbore concept""" ;
+    skos:example """
+:bh-1
+    a bore:Borehole ;
+    schema:hasPart
+        :bhi-a ,
+        :bhi-b ,
+        :bhi-c ,
+        :bhi-d ,
+        :bhi-e ,
+        :bhi-f ,
+        :bhi-g ;
+    geo:hasGeometry [
+        a geo:Geometry ;
+        geo:asWKT "LINESTRINGZ ((...))"^^geo:wktLiteral ;
+    ] ;
+.
+""" ;
+.
+
+:BoreholeInterval
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "A Borehole Interval is a piece of a Borehole" ;
+    schema:name "Borehole Interval" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "No example yet" ;
+.
+
+:Drillhole
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf :Bore ;
+    schema:description "A kind of Bore made in solid rock or hard earth" ;
+    schema:name "Drillhole" ;
+    skos:scopeNote "A Drillhole is a Bore, not a Borehole, however for Drillholes with just a single Borehole within them, the Bore and Borehole objects may be indistinguishable" ;
+    skos:historyNote """Added after finding natural use of a class of this name in the WAROX dataset""" ;
+    skos:example "See example for Bore" ;
+.
+
+:hasOriginPosition
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:domain :Bore ;
+    rdfs:range geo:Geometry ;
+    schema:description "The geometry position, as a POINT, of the Bore's entrance on the surface" ;
+    schema:name "has origin position" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "See example for Bore" ;
+.
+
+:hasLogElement
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "Indicates a detailed record (a Bore/Well log) of the geologic formations penetrated by a Borehole/Wellbore" ;
+    schema:name "has log element" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "None given yet" ;
+.
+
+:hasPurpose
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:domain :Bore ;
+    rdfs:range skos:Concept ;
+    schema:description "The purpose(es) for which the Bore was drilled, taken from a vocabulary of concepts" ;
+    schema:name "has purpose" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "See example for Bore" ;
+.
+
+:hasInclination
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:domain [
+        owl:unionOf (
+            :Bore
+            :Borehole
+        ) ;
+    ] ;
+    rdfs:range rdfs:Literal ;
+    schema:description "The inclined angle, relative to th surface of the earth, of a Bore overall or an individual Borehole's shaft" ;
+    schema:name "has inclination" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "None given yet" ;
+.
+
+:hasSurfaceCircumstances
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:domain :Bore ;
+    rdfs:range skos:Concept ;
+    schema:description "The situation of the Bore's entry point at the earth's surface, taken from a vocabulary of concepts" ;
+    schema:name "has surface circumstances" ;
+    skos:usageNote "Surface Circumstances must be selected from the Borehole Surface Circumstance vocabulary. This property maps to GeoSciML's Borehole Start property" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "None given yet" ;
+.
+
+:hasStatus
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:domain :Bore ;
+    rdfs:range skos:Concept ;
+    schema:description "The planning or operational status of the Bore, taken from a vocabulary of concepts" ;
+    schema:name "has status" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "See example for Bore" ;
+.
+
+:hadDrillingMethod
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:domain [
+        owl:unionOf (
+            :Bore
+            :Borehole
+        ) ;
+    ] ;
+    rdfs:range skos:Concept ;
+    schema:description "The main method used to drill the Bore or individual Borehole, taken from a vocabulary of concepts" ;
+    schema:name "has drilling method" ;
+    skos:historyNote """Derived from GeoSciML""" ;
+    skos:example "See example for Bore" ;
+.

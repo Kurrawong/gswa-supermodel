@@ -1,5 +1,40 @@
+PREFIX : <https://linked.data.gov.au/def/mine/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofh: <https://linked.data.gov.au/def/mine/>
+PREFIX ont: <https://linked.data.gov.au/def/geofh>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/mine>
+:1.0 schema:name "1.0" .
+
+ont:
     a owl:Ontology ;
+    owl:versionIRI :1.0 ;
+    schema:codeRepository "https://github.com/Kurrawong/gswa-supermodel/"^^xsd:anyURI ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:dateCreated "2025-01-15"^^xsd:date ;
+    schema:dateModified "2025-09-17"^^xsd:date ;
+    schema:dateIssued "2025-06-15"^^xsd:date ;
+    schema:description """A model of natural resource extraction mines""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Mine Model" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1.0" ;
+    skos:historyNote """1.0 - Sep 2025 - First complete version released into the GSWA Knowledge Graph""" ;
+    schema:hasPart :Mine ;
+.
+
+
+:Mine
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf geofh:Site ;
+    schema:description "An excavation in the earth for extracting natural resource commodities" ;
+    schema:name "Mine" ;
+    skos:historyNote """Created within the Geological Features Hierarchy Model's class hierarchy""" ;
+    skos:example "No example given yet" ;
 .

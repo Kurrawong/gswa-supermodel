@@ -1,0 +1,140 @@
+PREFIX : <https://linked.data.gov.au/def/gswa-analyses/>
+PREFIX ont: <https://linked.data.gov.au/def/gswa-analyses>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:0.1 schema:name "0.1" .
+
+ont:
+    a owl:Ontology ;
+    owl:versionIRI :0.1 ;
+    schema:codeRepository "https://github.com/Kurrawong/gswa-supermodel/"^^xsd:anyURI ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:dateCreated "2025-09-15"^^xsd:date ;
+    schema:dateModified "2025-09-15"^^xsd:date ;
+    schema:dateIssued "2025-05-17"^^xsd:date ;
+    schema:description """A class hierarchy of types of geochemistry analyses""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "GSWA Geochemistry Analyeses Model" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "0.1" ;
+    skos:historyNote """0.1 - Sep 2025 - model elements extracted from GSWA ETL code for MS SQL DBs -> Knowledge Graph""" ;
+.
+
+:LaIcpmsAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS) is an analytical technique that uses direct micro-scale sampling to provide high precision elemental and stable isotope analyses of solid materials." ;
+    schema:name "LA-ICP-MS Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;
+    skos:historyNote """Added at ontology creation time, from Internet searching of term""" ;
+.
+
+:LuHfAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Lu-Hf Analyses" ;
+    schema:name "Lu-Hf Analyses" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;    
+    skos:historyNote """Added at ontology creation time just reiterating IRI information""" ;
+.
+
+:OxygenAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Oxygen Analysis" ;
+    schema:name "Oxygen Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;    
+    skos:historyNote """Added at ontology creation time just reiterating IRI information""" ;
+.
+
+:ShrimpAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Sensitive High Resolution Ion Microprobe (SHRIMP) analyses" ;
+    schema:name "SHRIMP Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;    
+    skos:historyNote """Added at ontology creation time, from Internet searching of term""" ;
+.
+
+:SmNdAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "SmNd Analysis" ;
+    schema:name "SmNd Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;    
+    skos:historyNote """Added at ontology creation time just reiterating IRI information""" ;
+.
+
+:GeochronologyAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Geochronology Analysis" ;
+    schema:name "Geochronology Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;    
+    skos:historyNote """Added at ontology creation time just reiterating IRI information""" ;
+.
+
+:MetamorphicHistoryAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Metamorphic History Analysis" ;
+    schema:name "Metamorphic History Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;    
+    skos:historyNote """Added at ontology creation time just reiterating IRI information""" ;
+.
+
+:MineralChemistryAnalysis 
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf sosa:Observation ;
+    schema:description "Mineral Chemistry Analysis" ;
+    schema:name "Mineral Chemistry Analysis" ;
+    skos:example """:xx-1 
+    a sosa:Observation ;
+    schema:additionalType :LaIcpmsAnalysis ;
+.
+""" ;
+    skos:historyNote """Added at ontology creation time just reiterating IRI information""" ;
+.

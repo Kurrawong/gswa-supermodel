@@ -1,0 +1,16 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/org/gswa>
+    a schema:Organization ;
+    schema:description "The Geological Survey of Western Australia (GSWA) provides objective and authoritative geoscientific data, information and services to support the responsible use of the State’s natural resources." ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://www.wa.gov.au/organisation/department-of-mines-petroleum-and-exploration/geological-survey-of-western-australia"^^xsd:anyURI ;
+.
+
+<https://kurrawong.ai>
+    a schema:Organization ;
+    schema:description "A small, Australian-based IT company, specialising in Knowledge Graphs, Data Modelling & AI." ;
+    schema:name "KurrawongAI" ;
+    schema:url "https://kurrawong.ai"^^xsd:anyURI ;
+.

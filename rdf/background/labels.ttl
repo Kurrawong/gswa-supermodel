@@ -1,0 +1,9 @@
+PREFIX schema: <https://schema.org/>
+
+
+
+
+
+<http://www.opengis.net/ont/geosparql>
+    schema:name "GeoSPARQL Ontology" ;
+.

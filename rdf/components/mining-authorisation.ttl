@@ -1,5 +1,120 @@
+PREFIX : <https://linked.data.gov.au/def/mining-authorisation/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofh: <https://linked.data.gov.au/def/mining-authorisation/>
+PREFIX ont: <https://linked.data.gov.au/def/geofh>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/mining-authorisation>
+:1.0 schema:name "1.0" .
+
+ont:
     a owl:Ontology ;
+    owl:versionIRI :1.0 ;
+    schema:codeRepository "https://github.com/Kurrawong/gswa-supermodel/"^^xsd:anyURI ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:dateCreated "2025-01-15"^^xsd:date ;
+    schema:dateModified "2025-09-17"^^xsd:date ;
+    schema:dateIssued "2025-06-15"^^xsd:date ;
+    schema:description """A model caters for legal and policy instruments that give permission or exclusivity to own/operate mining-related operations, usually in designated areas.""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Mine Model" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1.0" ;
+    skos:historyNote """1.0 - Sep 2025 - First complete version released into the GSWA Knowledge Graph""" ;
+    schema:hasPart : ;
+.
+
+:Authority
+    a owl:Class ;    
+    rdfs:isDefinedBy ont: ;    
+    schema:description "" ;
+    schema:name "" ;
+    skos:historyNote "Created for this model" ;
+    skos:example "See examples of more concrete subclasses" ;
+.
+
+:Prospect
+    a owl:Class ;
+    rdfs:subClassOf :Authority ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "An authorisation in respect of which a mining tenement is in force, or in respect of which an application for a mining tenement has been made and has not been withdrawn or refused" ;
+    schema:name "Prospect" ;
+    skos:historyNote "Created for this model" ;
+    skos:scopeNote "This class may be withdrawn if its functionality can be included within the definition of Tenement" ;
+    skos:example "No example yet" ;
+.
+
+:Lease
+    a owl:Class ;
+    rdfs:subClassOf :Authority ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "A form of mining tenure created under a mining act" ;
+    schema:name "Lease" ;
+    skos:historyNote "Created for this model" ;
+    skos:scopeNote "This class may be withdrawn if its functionality can be included within the definition of Tenement" ;
+    skos:example "No example yet" ;
+.
+
+:Tenement
+    a owl:Class ;
+    rdfs:subClassOf geofh:AdministrativeFeature ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "A legal title granted under a mining act that gives the holder certain rights to explore for or extract minerals on a defined area of land" ;
+    schema:name "Tenement" ;
+    skos:historyNote "Created for this model" ;
+    skos:example """
+:tenement-x
+    a :Tenement ;
+    odrl:assignee :big-mining-company ;
+    # details about what this Tenement authorises the assignee to do
+    # e.g. extract certain minerals over a particular period of time
+.
+
+:tenement-x-area
+    a :TenementArea ;
+    odrl:hasAuthority :tenement-x ;
+    geo:hasGeometry [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON (( .. ))"^^geo:wktLiteral ;
+    ] ;
+.
+
+:big-mining-company
+    a odrl:Party ;  # likely also a schema:Organization
+.
+""" ;
+.
+
+:ProspectArea
+    a owl:Class ;
+    rdfs:subClassOf geofh:AdministrativeFeature ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "" ;
+    schema:name "" ;
+    skos:historyNote "Created for this model" ;
+    skos:example "No example yet" ;
+.
+
+:TenementArea
+    a owl:Class ;
+    rdfs:subClassOf geofh:AdministrativeFeature ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "" ;
+    schema:name "" ;
+    skos:historyNote "Created for this model" ;
+    skos:example "See example for Tenement" ;
+.
+
+:LeaseArea
+    a owl:Class ;
+    rdfs:subClassOf geofh:AdministrativeFeature ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "" ;
+    schema:name "" ;
+    skos:historyNote "Created for this model" ;
+    skos:example "No example yet" ;
 .

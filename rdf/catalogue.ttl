@@ -1,0 +1,26 @@
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/gswa/supermodel>
+    a schema:DataCatalog ;
+    skos:historyNote """2025-09 NJC: Created to allow for loading into the GSWA KG with ETL data""" ;
+    schema:codeRepository "https://github.com/Kurrawong/gswa-supermodel/" ;
+    schema:contributor <https://kurrawong.ai> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2025-09-17"^^xsd:date ;
+    schema:dateModified "2025-09-17"^^xsd:date ;
+    schema:description """The catalogue of all the models within the GSWA Supermodel""" ;
+    schema:hasPart
+        <https://linked.data.gov.au/def/gswa-analyses> ,
+        <https://linked.data.gov.au/def/bore> ,
+        <https://linked.data.gov.au/def/geofh> ,
+        <https://linked.data.gov.au/def/geosample> ,
+        <https://linked.data.gov.au/def/mine> ,
+        <https://linked.data.gov.au/def/mining-authorisation> ,
+        <https://linked.data.gov.au/def/resource-occurrence> ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "GSWA Supermodel Models Catalogue" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1" ;
+.

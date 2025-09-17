@@ -1,5 +1,211 @@
+PREFIX : <https://linked.data.gov.au/def/geofh/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofh: <https://linked.data.gov.au/def/geofh/>
+PREFIX ont: <https://linked.data.gov.au/def/geofh>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/geofeature>
+:1.0 schema:name "1.0" .
+
+ont:
     a owl:Ontology ;
+    owl:versionIRI :1.0 ;
+    schema:codeRepository "https://github.com/Kurrawong/gswa-supermodel/"^^xsd:anyURI ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://kurrawong.ai> ;
+    schema:dateCreated "2023-05-15"^^xsd:date ;
+    schema:dateModified "2025-09-17"^^xsd:date ;
+    schema:dateIssued "2025-02-15"^^xsd:date ;
+    schema:description """A model of types of geological and geological resource management features""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Geological Features Hierarchy Model" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1.0" ;
+    skos:historyNote """1.0 - Sep 2025 - First complete version released into the GSWA Knowledge Graph""" ;
+    schema:hasPart
+        geo:Feature ,
+        :ManmadeFeature ,
+        :NaturalFeature ,
+        :Site ,
+        <https://linked.data.gov.au/def/bore/Bore> ,
+        <https://linked.data.gov.au/def/mine/Mine> ,
+        :SurfaceSite ,
+        <http://sweetontology.net/realmGeol/GeologicFeature> ,
+        :NonGeologicalFeature ,
+        :AdministrativeFeature ,
+        <https://linked.data.gov.au/def/resource-occurrence/ResourceOccurrence> ;
+.
+
+geo:Feature
+    a owl:Class ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ;
+    schema:description "A discrete spatial phenomenon in a universe of discourse" ;
+    schema:name "Feature" ;
+    skos:example """
+<https://linked.data.gov.au/dataset/asgsed3/STE/5>
+    a geo:Feature ;
+    schema:name "Western Australia" ;
+    geo:hasGeometry [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON (( ... ))"^^geo:wktLiteral ;
+    ] ;
+.
+""" ;
+    skos:historyNote """Taken directly from GeoSPARQL""" ;
+.
+
+:ManmadeFeature
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf geo:Feature ;
+    owl:disjointWith :NaturalFeature ;
+    schema:description "A non-natural Feature made by human endeavour" ;
+    schema:name "Man-made Feature" ;
+    skos:example "See examples for more concrete subclasses" ;
+    skos:historyNote """Added in first iteration of model""" ;
+.
+
+:NaturalFeature
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf geo:Feature ;
+    owl:disjointWith :ManmadeFeature ;
+    schema:description "A Feature created by natural processes" ;
+    schema:name "Natural Feature" ;
+    skos:example """
+ex:lake-makay
+    a :NaturalFeature ;
+    schema:name "Lake Makay" ;
+    schema:description "Lake Mackay, known as Wilkinkarra to the Indigenous Pintupi people, is the largest of hundreds of ephemeral salt lakes scattered throughout the Pilbara and northern parts of the Goldfields-Esperance region of Western Australia" ;
+.
+""" ;
+    skos:historyNote """Added in first iteration of model""" ;
+.
+
+:Site
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf :ManmadeFeature ;
+    schema:description "A man-made feature with a known geology / resources sector purpose" ;
+    schema:name "Site" ;
+    skos:example "See examples for more concrete subclasses" ;
+    skos:historyNote """Added in first iteration of model""" ;
+.
+
+<https://linked.data.gov.au/def/bore/Bore>
+    a owl:Class ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/bore> ;
+    rdfs:subClassOf :Site ;
+    schema:description "A collection of Boreholes, starting from a single point on the earth's surface" ;
+    schema:name "Bore" ;
+    skos:example """
+:ex-1
+    a bore:Bore ;
+    schema:name "Bore Example 1" ;
+    schema:hasPart
+        :bh-1 ,
+        :bh-2 ;
+    bore:hasOriginPosition [
+        a geo:Geometry ;
+        geo:asWKT "POINT (124.2380 -27.0669)"^^geo:wktLiteral ;
+    ] ;
+    bore:hasPurpose <https://linked.data.gov.au/def/borehole-purpose-wa/metallurgical> ;
+    bore:hasStatus <http://linked.data.gov.au/def/borehole-status/abandoned-too-deep> ;
+    bore:hadDrillingMethod <https://linked.data.gov.au/def/borehole-drilling-method-western-australia/conventional-core> ;
+.
+""" ;
+    skos:historyNote """Added in first iteration of model, taken from the Bore Model""" ;
+.
+
+<https://linked.data.gov.au/def/mine/Mine>
+    a owl:Class ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/mine> ;
+    rdfs:subClassOf :Site ;
+    schema:description "A man-made feature with a known geology / resources sector purpose" ;
+    schema:name "Mine" ;
+    skos:example """
+:tom-price
+    a mine:Mine ;
+    schema:description "The Mount Tom Price mine is an iron ore mine located in the Pilbara region of Western Australia, near the town of Tom Price." ;
+    schema:name "Mount Tom Price mine" ;
+.
+""" ;
+    skos:historyNote """Added in first iteration of model, taken from the Mine Model""" ;
+.
+
+:SurfaceSite
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf :Site ;
+    schema:description "A Site that is on the surface of the earth" ;
+    schema:name "Surface Site" ;
+    skos:example "No example given" ;
+    skos:historyNote """Added to the model after finding use of 'Surface' in GSWA's Knowledge Graph data.""" ;
+.
+
+<http://sweetontology.net/realmGeol/GeologicFeature>
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf :NaturalFeature ;
+    owl:disjointWith :NonGeologicalFeature ;
+    schema:alternateName "Geologic Feature" ;
+    schema:description "A geologic feature is a conceptual feature a that is hypothesized to exist coherently in the Earth that results from geological processes" ;
+    schema:name "Geological Feature" ;
+    skos:example "See more concrete subclasses' examples" ;
+    skos:historyNote """Taken directly from SWEET""" ;
+.
+
+:NonGeologicalFeature
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf :NaturalFeature ;
+    owl:disjointWith <http://sweetontology.net/realmGeol/GeologicFeature> ;
+    schema:description "A natural feature created by non-geological processes" ;
+    schema:name "Non-Geological Feature" ;
+    skos:example "See more concrete subclasses' examples" ;
+    skos:historyNote """Added in first iteration of model""" ;
+.
+
+
+:AdministrativeFeature
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:subClassOf :ManmadeFeature ;
+    schema:description """A feature that is defined by humans for the purpose of administering human activity.
+
+These kinds of features may or may not follow observable, physical world, boundaries""" ;
+    schema:name "Administrative Feature" ;
+    skos:example "See more concrete subclasses' examples" ;
+    skos:historyNote """Added in first iteration of model""" ;
+.
+
+<https://linked.data.gov.au/def/resource-occurrence/ResourceOccurrence>
+    a owl:Class ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/resource-occurrence> ;
+    rdfs:subClassOf geo:Feature ;
+    schema:description "An occurrence of a resource" ;
+    schema:name "Resource Occurrence" ;
+    skos:example """
+ex:ro-x
+    a rom:ResourceOccurrence ;
+    geo:hasQualifiedGeometry [
+        a ego:QualifiedGeometry ;
+        geo:asWKT "POLYGON (( ... ))"^^geo:wktLiteral ;
+        ego:evidence [
+            a sosa:Observation ;
+            sosa:observedProperty obsprops:amount-of-gold ;
+            sosa:hasResult [
+                a sosa:Result ;
+                rdf:value 2.0 ;
+                qudt:unit unit:PPM ;
+            ] ;
+        ] ;
+    ] ,
+    ...
+.
+""" ;
+    skos:historyNote """Added in first iteration of model, taken from the Resource Occurrence Model""" ;
 .
